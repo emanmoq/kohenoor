@@ -7,5 +7,6 @@ jQuery(function ($) {
         items: 1,
         navText: ['<i class="fa-solid fa-chevron-right"></i>','<i class="fa-solid fa-chevron-left"></i>']
     });
+    
 });
 

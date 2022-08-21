@@ -110,6 +110,9 @@ margin-left: 5px;
     color:#a7a7a7;
     transition: all .5s;;
 }
+.navbar {
+    padding:0
+}
 .navbar-collapse  .nav-item {
     margin-left:40px
 }
@@ -181,7 +184,7 @@ background-color: rgba(0, 0, 0, .7);}
 
 .heroText{
     background-color: #be2318;
-    border:1px dashed white;
+    border:4px dashed white;
     width: 100%;
     color:white;
     padding: 54px 70px;
@@ -699,7 +702,8 @@ color:white;
 .copyRights p{
     font-size:.875em;
     color:white;
-    font-family:gulf-medium
+    font-family:gulf-medium;
+    float: right;
 }
 .footerSocialIcons{
     float: left;  
@@ -711,4 +715,26 @@ margin-right:20px
 }
 .footerSocialIcons li:first-child{
     margin-right: 0;
+}
+.footerSocialIcons li a{
+    color:white;
+}
+.footerSocialIcons li:hover a{
+color:#be2318
+}
+.myListBtn{
+    background-color: #be2318;
+    color:white;
+    width: 154px;
+    height: 41px;
+    font-family: avenir-medium;
+    border-radius: 20px;
+    border:1px solid #be2318
+}
+.myListBtn:hover{
+    background-color: white;
+    color:#be2318;
+}
+.rangSlider{
+    margin-bottom: 50px;
 }
