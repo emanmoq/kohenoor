@@ -1031,23 +1031,27 @@ width: 57%;
     margin-bottom: 32px;
 }
 #menuTabs li {
-    width:150px;
-    height: 43px;
-    font-family: avenir-heavy;
-    border-radius: 22px;
     display: inline-flex;
-    justify-content: center;
-    box-shadow: 3px 5px 10px rgba(66, 66, 66, .11);
-    margin-left: 14px;
-    transition: all .3s;
 }
-#menuTabs li.active,#menuTabs li:hover{
+#menuTabs li a.active,#menuTabs li:hover a{
     border: 2px solid #bf261c;
     color:#be2318;
     transition: all .3s;
 }
 #menuTabs li a{
     align-self: center;
+    width:150px;
+    height: 43px;
+    border-radius: 22px;
+display: flex;
+    justify-content: center;
+    box-shadow: 3px 5px 10px rgba(66, 66, 66, .11);
+    margin-left: 14px;
+    transition: all .3s;
+}
+#menuTabs  h6{
+    font-family: avenir-heavy;
+align-self: center;
 }
 #menuTabs li a:focus,#menuTabs li:hover a{
     color:#bf261c
