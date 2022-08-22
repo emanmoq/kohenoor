@@ -59,6 +59,9 @@ h5 {
 h6 {
     font-family: avenir-heavy;
 }
+h2{
+    font-family: avenir-black;
+}
 
 a {
     color: inherit
@@ -431,6 +434,8 @@ header {
     height: 270px;
     overflow: hidden;
     margin-bottom: 21px;
+    box-shadow: 13px 7px 57px rgba(216, 216, 216, .23);
+
 }
 
 .categBox .card-title {
@@ -441,7 +446,6 @@ header {
 
 .categBox .card-body {
     padding: 15px;
-    box-shadow: 13px 7px 57px rgba(216, 216, 216, .23);
 
 }
 
@@ -450,7 +454,7 @@ header {
     border-top-left-radius: calc(0.25rem - 1px);
     border-top-right-radius: calc(0.25rem - 1px);
     position: relative;
-    max-height: 230px;
+    height: 230px;
     overflow: hidden;
 }
 
@@ -481,7 +485,7 @@ header {
 
 }
 
-.cardImg a {
+.cardImg a,.reqBtn {
     width: 132px;
     height: 49px;
     background-color: #be2318;
@@ -491,6 +495,7 @@ header {
     align-self: center;
     justify-content: center;
     border-radius: 15px;
+    bordeR:1px solid #be2318;
 }
 
 .cardImg a span {
@@ -879,7 +884,7 @@ header {
 }
 
 #slider {
-    WIDTH: 100%;
+    width: 100%;
     height: 5px;
     background-color: #e1e1e1;
     direction: rtl !important;
@@ -908,5 +913,468 @@ html .ui-button.ui-state-disabled:active {
     color: #be2318;
     font-size: 0.75em;
     font-family: avenir-heavy;
+    top: -34px !important;
+    text-align: center;
+    display: inline-block;
+}
+.innerHeader{
+    position: relative;
+    background-color: #050505;
+    padding:45px 0;
+    text-align: center;
+    color: white;
+}
+.innerHeader:before{
+    content: "";
+    position: absolute;
+    background-image: url("../images/Background.png");
+    opacity: .2;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+}
+.innerHeader h2{
+    font-size: 2.375em;
+    margin-bottom: 15px;
+}
+.categpagBody{
+    padding-top:50px;
+    padding-bottom: 65px;
+    background-color: #f9fafc;
+}
+.categItemBox{
+    background-color: white;
+    border-radius: 20px;;
+    margin-bottom: 45px;
+    padding:20px;
+    height: 500px;
+    border:0;
+    box-shadow: 13px 7px 57px rgba(216, 216, 216, .23);
+display: block;
+margin-bottom: 70px;
+}
+.categItemBox .cardImg{
+width: 400px;
+border-radius: 20px;
+overflow: hidden;
+position: relative;
+height: 340px;
+float: right;
+}
+.cardImg .categName{
+    position: absolute;
+    left:30px;
+    top:30px;
+    z-index: 1;
+}
+.categItemBox .card-body{
+margin-right: 25px;
+float: right;
+padding: 0;;
+width: 57%;
+}
+.rightSide .sensitizer{
+    font-size: 0.6875em;
+    background-color: #ebebeb;
+    padding: 5px;
+    margin-top:10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    color:#3b3b3b;
+    display: block;
+}
+.rightSide a i{
+    color:#a0a4a7;
+}
+.reqBtn:hover{
+    background-color: transparent;
+    color:#be2318
+}
+.rightSide .price{
+    display: block;
+    float: none;
+    margin-bottom: 5px;
+}
+.rightSide .card-title{
+    font-size: 1.625em;
+}
+.categItemBox p{
+    font-size:.875em;
+    color:#3b3b3b;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+.gradiantText{
+    font-size: 1.125em;
+    color:#3b3b3b;
+    margin-bottom: 20px;
+}
+.gradiantList li{
+    margin-bottom: 15px;
+    color:#3b3b3b;
+    font-size: 14px;
+    font-family: avenir-heavy;
+}
+.moreCategTitle{
+    font-size: 1.625em;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.menuBody{
+    padding-top:75px;
+    padding-bottom: 65px;;
+}
+#menuTabs{
+    margin-bottom: 32px;
+}
+#menuTabs li {
+    width:150px;
+    height: 43px;
+    font-family: avenir-heavy;
+    border-radius: 22px;
+    display: inline-flex;
+    justify-content: center;
+    box-shadow: 3px 5px 10px rgba(66, 66, 66, .11);
+    margin-left: 14px;
+    transition: all .3s;
+}
+#menuTabs li.active,#menuTabs li:hover{
+    border: 2px solid #bf261c;
+    color:#be2318;
+    transition: all .3s;
+}
+#menuTabs li a{
+    align-self: center;
+}
+#menuTabs li a:focus,#menuTabs li:hover a{
+    color:#bf261c
+}
 
+.reqModal .modalheader h5{
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+.modalheader .close{
+  position: absolute;
+  left:10px;
+  top:10px;
+}
+.reqModal .modal-body{
+    padding:30px
+}
+.modalItemBox{
+    display: flex;
+    justify-content: space-between;
+}
+.ModalItemImg{
+    width:110px;
+    height: 84px;
+    margin-left:10px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.ModalItemImg img{
+    width: inherit;
+    object-fit: cover;
+    height: 100%;;
+}
+.reqModal .modal-content{
+    max-width: 550px;
+}
+.modalItemDetailsHeader h5{
+    font-size:1em;
+    float: right;
+}
+.modalItemDetailsHeader{
+    margin-bottom: 5px;
+}
+.modalItemDetailsHeader .categName{
+    float: left;
+    padding:2px 5px;
+    margin-left:10px
+}
+.modalItemDetails{
+    width: 200px;
+}
+.modalItemDetails p{
+    font-size: 12px;
+    color:#a8a8a8
+}
+.additionitem{
+    width:95px;
+    height:30px;
+    overflow: hidden;
+    border-radius: 15px;
+    border:2px solid #e1e1e1;
+    margin: 0;
+    align-self: center;
+}
+.additionitem button,.additionitem input{
+    float: right;
+    width: 33.3%;
+    margin: 0;
+    height: 100%;
+    border: 0;
+    transition: all .5s;
+    border-radius: 0;
+    padding: 0;
+    text-align: center;
+    color:#a0a4a7;
+    BORDER:0;
+    font-size: 9px; 
+}
+.additionitem button:focus,.additionitem input:focus{
+    box-shadow: none;
+    outline: none;
+}
+.additionitem button.btnminus{
+    border-radius: 15px 0 0 15px;
+}
+.additionitem button.btnplus{
+    border-radius: 0 15px 15px 0;
+}
+
+.additionitem button:hover{
+background-color: #bf261c;
+COLOR:white;
+transition: all .5s;
+}
+.ensureReq{
+width: 126px;
+height: 45px;
+background-color: #bf261c;
+color:white;
+margin:auto;
+margin: top 16px;transition: all .3s;
+border: 1px solid #bf261c;
+border-radius: 15px;
+margin-top: 15px;
+}
+.ensureReq:hover{
+background-color: transparent;
+color: #be2318;
+}
+.select2-container{
+    width: 100% !important;
+    background-color: #ebebeb;
+    border-radius: 25px;
+    margin-top:15px;
+    margin-bottom: 15px;
+    height: 50px;
+}
+.select2-container--default .select2-selection--single{
+    background-color: #ebebeb;
+    border-radius: 25px;
+    overflow: hidden;
+}
+.select2-selection{
+    width: 100% ;
+    height: 100%;
+    background-color: transparent;
+    border:0 !important
+}
+.QRbody{
+    background-color: #f9fafc;
+    padding-top:62px;
+    padding-bottom: 100px;
+}
+.qrboxContainer{
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow:13px 7px 59px rgba(216,216,216,.23);
+    padding:65px;
+}
+.QRBox{
+border:2px dashed #d7d7d7;
+border-radius: 20px;
+padding:82px 30px 70px;
+}
+.qrImg{
+    width:72px;
+    margin:auto;
+    margin-bottom: 25px;
+}
+.QRBox h6{
+    font-size:1.625em;
+    margin-bottom: 17px;
+}
+.QRBox P{
+    font-size: 1.125em;
+    color:#919191;
+    margin-bottom: 28px;
+}
+@media(max-width:850px){
+    body{
+        font-size: 12px;
+    }
+    .categItemBox .cardImg{
+        width:100%;
+        margin-bottom:50px
+
+    }
+    .categItemBox{
+        height: auto;
+    }
+    .categItemBox .card-body{
+        width: 100%;
+        margin-right: 0;
+    }
+    .topHeaderContact li{
+        padding:0 2px
+    }.topSocialIcons {
+        margin-top:10px;
+        float: none !important;
+    }
+    .footerLogo{
+        margin:auto;
+    }
+
+.navbar-toggler{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: none;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    outline: none !important;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    text-indent: -9999px;
+    appearance: none;
+    box-shadow: none;
+    border-radius: none;
+    border: none;
+    cursor: pointer;
+    background-color: none;
+    outline: none !important;
+    width: 24px;
+    height: 24px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.navbar-toggler span {
+    display: block;
+    position: absolute;
+    border-radius: 3px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    top: 10px;
+    height: 3px;
+    min-height: 3px;
+    width: 100%;
+  }
+  .navbar-toggler span::before, .navbar-toggler span::after {
+    position: absolute;
+    display: block;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    min-height: 3px;
+    content: "";
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    border-radius: 3px;
+  }
+  .navbar-toggler span::before {
+    top: -8px;
+  }
+  .navbar-toggler span::after {
+    bottom: -8px;
+  }
+  .navbar-toggler-left span:before {
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    left: auto;
+    right: 0px;
+    width: 50%;
+  }
+  .navbar-toggler-left span:after {
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    left: auto;
+    right: 0px;
+    width: 75%;
+  }
+
+  .navbar-toggler span:before {
+    left: 0px;
+    right: auto;
+    width: 50%;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .navbar-toggler span:after {
+    left: 0px;
+    right: auto;
+    width: 75%;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .navbar-toggler span {
+    background-color: #be2318;
+  }
+  .navbar-toggler span::before, .navbar-toggler span::after {
+    background-color: #be2318;
+  }
+  .navbar-toggler:hover span {
+    background-color: #3699FF;
+  }
+  .navbar-toggler:hover span::before, .navbar-toggler:hover span::after {
+    background-color: #3699FF;
+  }
+  .clientBox{
+    width: 100%;;
+  }
+  .stepBox{
+    margin:auto;
+    margin-bottom: 20px;
+  }
+  .connectBtnContainer{
+    justify-content: right;
+    margin-top: 20px;
+  }
+  .clientsOpinionSlider .owl-nav{
+    top: auto;
+    bottom: -5%;
+  }
+  .clientsOpinionSlider .owl-nav button.owl-next{
+    right: 35%;;
+  }
+  .clientsOpinionSlider .owl-nav button{
+    right: 25%
+  }
+  .myListBtn{
+    margin-top:20px;
+    width: 100%;
+  }
+  .categBox{
+    height: 165px;
+  }
+  .categBox .cardImg{
+    max-height: 145px;
+    height: 145px;
+    overflow: hidden;
+  }
+  .categSec{
+    margin-bottom: 30px;;
+    overflow: hidden;
+  }
+  .navbar-collapse .nav-item .nav-link:before{
+    display: none;
+  }
 }

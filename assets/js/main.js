@@ -5,6 +5,7 @@ jQuery(function ($) {
         nav: true,
         dots: false,
         items: 1,
+        margin:0,
         navText: ['<i class="fa-solid fa-chevron-right"></i>','<i class="fa-solid fa-chevron-left"></i>']
     });
     $("#slider").slider({
@@ -13,7 +14,7 @@ jQuery(function ($) {
         min: 0,
         max: 500,
         step: 10,
-        values: [15, 55],
+        values: [15, 400],
         slide: function(event, ui) {
             var delay = function() {
                 var handleIndex = $(ui.handle).index();
@@ -22,7 +23,7 @@ jQuery(function ($) {
                     my: 'top right',
                     at: 'top right',
                     of: ui.handle,
-                    offset: "-40, -40"
+                    offset: "50, -40"
                 });
             };
             
@@ -39,7 +40,7 @@ jQuery(function ($) {
     });
     
     $('#max').html("ر.س" + $('#slider').slider('values', 1)).position({
-        my: 'top right',
+        my: 'top left',
         at: 'top right',
         of: $('#slider span:eq(1)'),
         offset: "-40, -40"
