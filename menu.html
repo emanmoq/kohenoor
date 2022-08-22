@@ -520,15 +520,30 @@
                                 </button>
                             </div>
                         </form>
-  
+
                     </div>
                     <form action="" class="addptions">
-                        <select class="moreOptions" >
+                        <select class="moreOptions">
                             <option>خيارات إضافية</option>
                             <option value="WY">وجبة حجم كبير</option>
                             <option value="WY">إضافة صوص </option>
 
-                          </select>
+                        </select>
+                        <div class="selectiionBoxContainer">
+                            <span class="selectionTag clearfix">
+                                <span> وجبة حجم كبير</span>
+                                <button type="button" class="close selectClose">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </span>
+                            <span class="selectionTag clearfix">
+                                <span> اضافة صوص حار</span>
+                                <button type="button" class="close selectClose">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </span>
+
+                        </div>
                     </form>
                     <a href="javaScript;:" class="btn ensureReq"><span>تأكيد الطلب</span></a>
                 </div>
@@ -545,14 +560,19 @@
     <script type="text/javascript" src="assets/js/jquery-filterable.js"></script>
     <script type="text/javascript" src="assets/js/menuFilter.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-
     <script type="text/javascript" src="assets/js/main.js"></script>
     <script>
-        $(document).ready(function() {
-    $('.moreOptions').select2({
-        dir: "rtl",
-    })
-});
+        $(".modal").modal("show");
+        $(".selectClose").click(function () {
+            $(this).parent().hide()
+        }) 
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.moreOptions').select2({
+                dir: "rtl",
+            })
+        });
 
         //plugin bootstrap minus and plus
         $(document).ready(function () {
