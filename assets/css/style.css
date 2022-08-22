@@ -689,7 +689,7 @@ header {
     z-index: 2;
 }
 
-.googlemap {
+.contactUsMain .googlemap {
     position: absolute;
     top: 0;
     left: 0;
@@ -697,7 +697,7 @@ header {
     height: 100%;
 }
 
-.googlemap object {
+.contactUsMain .googlemap object {
     width: 100%;
     height: 100%;
 }
@@ -1537,6 +1537,37 @@ color:#a8a8a8
 .successBox{
     border:0;
     padding:0
+}
+.googlemap object{
+    width:100%;
+    height: 245px;
+}
+.contactUsFormBox .googlemap{
+    margin:25px 0
+}
+.contactUsFormBox{
+    padding:57px 0
+}
+.contactUsFormBox .form-control{
+    height: 50px;
+    background-color: #ebebeb;
+    border-radius: 25px;
+}
+.contactUsFormBox .form-group{
+    position: relative;
+    margin-bottom: 25px;
+}
+.contactUsFormBox .form-control::placeholder{
+    font-size:1em;
+    color:#949494;
+}
+.contactUsFormBox h4{
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.375em;
+}
+.contactUs{
+    padding:60px 0
 }
 @media(max-width:850px){
     body{
