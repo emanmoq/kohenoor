@@ -1534,6 +1534,10 @@ color:#a8a8a8
 .tablePrice{
     color:#be2318
 }
+.successBox{
+    border:0;
+    padding:0
+}
 @media(max-width:850px){
     body{
         font-size: 12px;
