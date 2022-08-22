@@ -114,28 +114,157 @@
             </div>
         </div>
     </header>
-    <section class="QRbody">
+    <section class="ordersBodySec">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <div class="qrboxContainer whiteBox">
-                        <div class="row justify-content-center">
-                            <div class="col-md-6">
-                                <div class="QRBox text-center">
-                                    <div class="qrImg">
-                                        <img src="assets/images/qr-code.svg" alt="">
+                <div class="col-md-8">
+                    <div class="ordersBox whiteBox clearfix">
+                        <table class="ordersTable">
+                            <thead>
+                                <tr>
+                                    <th width="55%">
+                                        <h5>الصنف</h5>
+                                    </th>
+                                    <th width="15%">
+                                        <h5>السعر</h5>
+                                    </th>
+                                    <th width="15%">
+                                        <h5>الضريبة</h5>
+                                    </th>
+                                    <th width="15%">
+                                        <H5>الاجماليي</H5>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="tableOrderDetails">
+                                            <div class="orderItemImg">
+                                                <img src="assets/images/checken.png" alt="">
+                                            </div>
+                                            <div class="ordeNameQuantity">
+                                                <h5>اصابع دجاج</h5>
+                                                <p>الكمية: <span>1</span> </p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <h6>15 ر.س</h6>
+                                    </td>
+                                    <td>
+                                        <h6>25 ر.س</h6>
+                                    </td>
+                                    <td>
+                                        <h6>17 ر.س</h6>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="tableOrderDetails">
+                                            <div class="orderItemImg">
+                                                <img src="assets/images/checken.png" alt="">
+                                            </div>
+                                            <div class="ordeNameQuantity">
+                                                <h5>اصابع دجاج</h5>
+                                                <p>الكمية: <span>1</span> </p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <h6>15 ر.س</h6>
+                                    </td>
+                                    <td>
+                                        <h6>25 ر.س</h6>
+                                    </td>
+                                    <td>
+                                        <h6>17 ر.س</h6>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="totalOrderDetails">
+                            <ul>
+                                <li class="clearfix">
+                                    <p class="float-right">المبلغ للدفع</p>
+                                    <span class="float-left">
+                                        30 ر.س
+                                    </span>
+                                </li>
+                                <li class="clearfix">
+                                    <p class="float-right">الضريبة (15%) </p>
+                                    <span class="float-left">
+                                        5 ر. س
+                                    </span>
+                                </li>
+                                <li class="clearfix total">
+                                    <h6 class="float-right"> الاجمالي </h6>
+                                    <h5 class="float-left">
+                                        30 ر.س
+                                    </h5>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="paywayBox whiteBox clearfix">
+                        <form action="" class="payWaysForm">
+                            <h5>طرق الدفع</h5>
+                            <div class="paywaysChoose">
+                                <label class="paywayCheckContainer">
+                                    <input type="radio" checked="checked" name="choosePay">
+                                    <div class="checkContainer">
+                                        <h5>بطاقة ائتمانية</h5>
                                     </div>
-                                    <h6>الاختيار من خلال QR Code</h6>
-                                    <p>قم بمسح رمز كيو آر كود لاختيار الصنف وفق لقائمة</p>
-                                    <a href="javaScript;:" class="btn ensureReq"><span>مسح الرمز </span></a>
+                                </label>
+                                <label class="paywayCheckContainer">
+                                    <input type="radio" name="choosePay">
+                                    <div class="checkContainer">
+                                        <h5>Mada </h5>
+                                    </div>
+                                </label>
+                                <label class="paywayCheckContainer">
+                                    <input type="radio" name="choosePay">
+                                    <div class="checkContainer">
+                                        <h5>Apple Pay</h5>
+                                    </div>
+
+                                </label>
+                            </div>
+                            <h4>املئ المعلومات الخاصة بك</h4>
+                            <div class="form-group">
+                                <input type="text" placeholder="اسم حامل البطاقة" id="name" maxlength="20" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <input id="cardnumber" type="text" pattern="[0-9]*" inputmode="numeric" placeholder="رقم البطاقة" class="form-control">
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input id="expirationdate" type="text" pattern="[0-9]*" inputmode="numeric" class="form-control" placeholder="تاريخ الانتهاء">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input id="securitycode" type="text" pattern="[0-9]*" inputmode="numeric" class="form-control" placeholder="CVV">
+                              
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                            <div class="orderFormFooter">
+                                <a href="javaScript;:" class="btn backBtn"><span>رجوع للطلب</span>
+                                </a>
+                                <a href="javaScript;:" class="btn reqBtn"><span> تأكيد الطلب</span>
+                                </a>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
     <footer class="footer">
         <div class="container">
             <div class="row">
@@ -228,7 +357,6 @@
                             </li>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -241,7 +369,12 @@
     <script type="text/javascript" src="assets/js/owl.carousel.js"></script>
     <script type="text/javascript" src="assets/js/jquery-ui.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
     <script type="text/javascript" src="assets/js/main.js"></script>
+    
+    <script defer="" src="https://unpkg.com/imask"></script>
+    <script type="text/javascript" src="assets/js/credit.js"></script>
+
 
 </body>
 

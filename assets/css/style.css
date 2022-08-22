@@ -7,6 +7,7 @@ body {
     text-align: right;
     direction: rtl;
     font-family: avenir-Regular;
+    background-color: #f9fafc;
 }
 
 @font-face {
@@ -260,7 +261,8 @@ header {
 }
 
 .stepsSection {
-    padding: 68px 0
+    padding: 68px 0;
+    background-color: white;
 }
 
 .sectionTitle h4 {
@@ -358,14 +360,13 @@ header {
 }
 
 /* Hide the browser's default checkbox */
-.checkboxContainer input {
+.checkboxContainer input,.paywayCheckContainer input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
     height: 0;
     width: 0;
 }
-
 /* Create a custom checkbox */
 .checkmark {
     position: absolute;
@@ -375,14 +376,11 @@ header {
     width: 18px;
     border-radius: 4px;
     background-color: #ebebeb;
-    ;
 }
-
 /* When the checkbox is checked, add a blue background */
 .checkboxContainer input:checked~.checkmark {
     background-color: #be2318;
 }
-
 /* Create the checkmark/indicator (hidden when not checked) */
 .checkmark:after {
     content: "";
@@ -485,7 +483,7 @@ header {
 
 }
 
-.cardImg a,.reqBtn {
+.cardImg a,.reqBtn,.backBtn {
     width: 132px;
     height: 49px;
     background-color: #be2318;
@@ -534,7 +532,8 @@ header {
 }
 
 .clientsOpinions {
-    padding: 75px 0
+    padding: 75px 0;
+    background-color: white;;
 }
 
 .clientBox {
@@ -1205,10 +1204,13 @@ color: #be2318;
     padding-top:62px;
     padding-bottom: 100px;
 }
-.qrboxContainer{
+.whiteBox{
     background-color: #fff;
     border-radius: 20px;
     box-shadow:13px 7px 59px rgba(216,216,216,.23);
+  
+}
+.qrboxContainer{
     padding:65px;
 }
 .QRBox{
@@ -1257,6 +1259,199 @@ padding:82px 30px 70px;
     opacity: 1;
     text-shadow: none;
     align-self: center;
+}
+.ordersBodySec{
+    padding:60px 0;
+
+}
+.ordersTable th h5{
+    font-size:1.125em;
+}
+.orderItemImg{
+    width:100px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-left:20px;
+    display: inline-block;
+}
+.ordeNameQuantity h5{
+    font-size: 1em;
+}
+.ordeNameQuantity p{
+    font-size: 0.75em;
+    color:#a8a8a8;
+    margin-top:10px
+}
+.ordersTable{
+    width: 100%;;
+    border-collapse:separate; 
+    border-spacing: 0 9px; 
+}
+.ordersTable thead th{
+padding: 10px 8px;
+margin-bottom: 20px;
+}
+.ordersTable tbody tr{
+    background-color: #f4f4f4;
+}
+.ordersBox{
+    padding: 40px;
+    height: 600px;
+}
+.ordersTable tbody tr td{
+    padding:8px;
+    border-top:2px solid #e1e1e1;
+    border-bottom:2px solid #e1e1e1;
+}
+.ordersTable tbody tr td:first-child{
+    border-right:2px solid #e1e1e1;
+    border-radius: 0 20px 20px 0;
+    overflow: hidden;
+}
+.ordersTable tbody tr td:last-child{
+    border-left:2px solid #e1e1e1;
+    overflow: hidden;
+    border-radius:  20px 0 0 20px ;
+}
+.tableOrderDetails{
+    display: flex;
+    width: 100%;;
+}
+.ordeNameQuantity{
+    align-self: center;
+}
+.ordersTable tbody td h6{
+    font-size: .875em;
+    color:#bf261c
+}
+.totalOrderDetails{
+    width:40%;
+    float:left;
+    padding:0 8px
+}
+.totalOrderDetails li{
+    font-size: .875em;
+    padding-top:12px
+}
+.totalOrderDetails li span{
+    color:#be2318;
+}
+.totalOrderDetails li.total{
+    border-top: 1px solid #ebebeb;
+}
+.totalOrderDetails li.total h6{
+    font-size: 1em;
+}
+.totalOrderDetails li.total h5{
+    color:#be2318;
+    font-size: 1em;
+}
+.payWaysForm{
+    height: 100%;
+    margin: 0;
+}
+.payWaysForm h5{
+font-size: 1.375em;
+margin-bottom: 15px;
+text-align: center;
+}
+.paywaysChoose{
+    margin:auto;
+    margin-bottom: 29px;
+
+}
+.paywayCheckContainer{
+    
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+}
+.checkContainer{
+    display: inline-flex;
+    background-color: white;
+    border:2px solid #ebebeb;
+    padding:10px;
+    border-radius: 25px;
+    margin-left:10px;
+}
+.paywayCheckContainer:last-child .checkContainer{
+    margin-left: 0;
+}
+.checkContainer h5{
+    align-self: center;
+    margin-bottom: 0;;
+    font-size: 1em;
+}
+.paywayBox{
+    padding:35px 15px;
+    height: 600px;
+}
+input:checked ~ .checkContainer {
+    color:#be2318;
+    border:2px solid #be2318;
+}
+.payWaysForm h4{
+font-size: 1.125em;
+margin-bottom: 11px;
+text-align: center;
+}
+.payWaysForm .form-group{
+    width: 100%;
+}
+.payWaysForm .form-control{
+    width: 100%;
+    height: 50px;
+    background-color: #ebebeb;
+    border-radius: 25px;
+}
+
+.field-container input {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.field-container {
+    position: relative;
+}
+.payWaysForm .form-control::placeholder{
+    font-size: 1em;
+    color:#949494;
+}
+.payWaysForm .form-group:first-of-type {
+    grid-area: name;
+}
+
+.payWaysForm .form-group:nth-of-type(2) {
+    grid-area: number;
+}
+
+.payWaysForm .form-group:nth-of-type(3) {
+    grid-area: expiration;
+}
+
+.payWaysForm .form-group:nth-of-type(4) {
+    grid-area: security;
+}
+.orderFormFooter{
+    display: inline-flex;
+    justify-content: center;
+}
+.orderFormFooter .reqBtn{
+margin-right:15px
+}
+.orderFormFooter{
+    margin:auto;
+    display: flex;
+    align-self: flex-end;
+}
+.backBtn{
+    background-color: black;
+    color:white;
+    border: 1px solid #000;
+}
+.backBtn:hover{
+    background-color: transparent;
+    color:black
 }
 @media(max-width:850px){
     body{
