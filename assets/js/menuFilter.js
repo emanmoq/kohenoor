@@ -5,6 +5,8 @@ jQuery(function ($) {
     filter_container.children().css('position', 'relative');
     filter_container.masonry({
         singleMode: true,
+        isRTL: true,
+        
         itemSelector: '.menuFilterItem:not(.hide)',
         animate: true,
         animationOptions: { duration: 800, queue: false }
@@ -12,6 +14,7 @@ jQuery(function ($) {
     $(window).resize(function () {
         var temp_width = filter_container.children().filter(':first')();
         filter_container.masonry({
+            isRTL: true,
             columnWidth: temp_width,
             singleMode: true,
             itemSelector: '.menuFilterItem:not(.hide)',

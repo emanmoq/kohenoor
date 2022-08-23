@@ -5,7 +5,7 @@ body {
     overflow-x: hidden;
     position: relative;
     text-align: right;
-    direction: rtl;
+    direction: rtl !important;
     font-family: avenir-Regular;
     background-color: #f9fafc;
 }
@@ -432,7 +432,7 @@ header {
     height: 270px;
     overflow: hidden;
     margin-bottom: 21px;
-    box-shadow: 13px 7px 57px rgba(216, 216, 216, .23);
+    box-shadow: 13px 7px 59px rgba(216, 216, 216, .23);
 
 }
 
@@ -1576,6 +1576,100 @@ color:#a8a8a8
 #menuFilter{
     width: 100%;;
 }
+
+.invoiceBox{
+    background-color: white;;
+    width: 400px;
+    margin:50px auto;
+    padding:25px;
+    direction: ltr;
+    text-align: left;
+}
+.invocieLogo{
+    width:190px;
+    margin:auto;
+    margin-bottom: 15px;
+}
+
+.pranchDetails h6{
+    margin-bottom: 10px;
+    font-size: .875em;
+}
+.pranchDetails .invocieNum{
+    font-size: 2.125em;
+    margin-bottom: 10px;
+}
+.invocieList{
+    margin-bottom: 25px;
+}
+.invocieList li{
+    padding:15px 0;
+    border-bottom: 1px solid #d7d7d7;
+}
+.invocieList li:last-child{
+    border-bottom: 0;
+}
+.invocieList li span{
+    font-size: .875em;
+}
+.invocieDate{
+    margin-left:10px
+}
+.invocieList h6{
+    margin-bottom: 10px;
+    font-size: .875em;
+}
+.invoceordersList{
+    margin-bottom: 20px;
+}
+.orderListCategName span{
+    display: block;
+}
+.invoceordersList{
+    display: table;
+width: 100%;
+}
+.invoceordersList h6{
+    align-self: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+.totlaPrice{
+    margin-bottom: 15px;
+}
+.totlaPrice:last-child{
+    margin-bottom: 0;
+}
+.totlaPrice h6{
+    margin-bottom: 0;
+}
+ .notesText p {
+width:100%;
+overflow: hidden;
+position: relative;
+ }
+ .notesText span { 
+     background:#fff; 
+     padding:0 5px; 
+     position: absolute;
+     top:0;
+     left:27%;
+ }
+ .invoceFooter h6{
+    font-size: .875em;
+    margin-top:10px;
+    text-align: center;
+ }
+ .invoiceParcode {
+    width: 124px;
+    margin:20px auto
+ }
+ .invocieSocial h6{
+    font-size: .875em;
+ }
+ .invocieSocial h6 i{
+    margin-right:5px
+ }
 @media(max-width:850px){
     body{
         font-size: 12px;
